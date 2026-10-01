@@ -1,0 +1,11 @@
+export type ClientStatus = "lead" | "active" | "past";
+export type Client = { id: string; name: string; company?: string; email?: string; phone?: string; color: string; status: ClientStatus; rate: number; notes?: string; lastContact?: string; createdAt: string };
+export type ProjectStatus = "backlog" | "in_progress" | "review" | "done";
+export type Project = { id: string; clientId: string; name: string; status: ProjectStatus; deadline?: string; billing: "hourly" | "fixed"; budget?: number; rate?: number; description?: string; createdAt: string };
+export type Task = { id: string; projectId: string; title: string; done: boolean; due?: string; priority: "low" | "med" | "high" };
+export type TimeEntry = { id: string; projectId: string; taskId?: string; date: string; minutes: number; note: string; billable: boolean; invoiceId?: string };
+export type InvoiceItem = { id: string; description: string; qty: number; rate: number };
+export type Invoice = { id: string; number: string; clientId: string; issueDate: string; dueDate: string; items: InvoiceItem[]; status: "draft" | "sent" | "paid"; paidDate?: string; sentDate?: string; taxPct: number; notes?: string };
+export type Business = { name: string; email: string; address: string; currency: string; defaultRate: number; terms: number };
+export type Timer = { projectId: string; taskId?: string; note: string; startedAt: number } | null;
+export type CrmData = { business: Business; clients: Client[]; projects: Project[]; tasks: Task[]; entries: TimeEntry[]; invoices: Invoice[]; timer: Timer; isDemo: boolean };
