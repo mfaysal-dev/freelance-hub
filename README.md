@@ -2,7 +2,7 @@
 
 A polished, privacy-first mini CRM that runs **entirely in your browser**. No accounts, no backend, no API keys — data lives in `localStorage` with JSON export/import.
 
-**Live:** _see repo homepage_
+**Live:** https://freelance-hub-gamma-beige.vercel.app
 
 ## Features
 - **Clients** — leads / active / past, hourly rates, notes, last-contact tracking, one-click follow-up messages (copied to clipboard) and `mailto:` links.
