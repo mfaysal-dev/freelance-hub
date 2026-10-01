@@ -69,7 +69,9 @@ export function demoData(now: Date = new Date()): CrmData {
     inv("i-6", "INV-0006", "c-kacchi", -26, -12, [["Menu site — 50% upfront", 1, 450]], "sent"),
     inv("i-7", "INV-0007", "c-nimbus", -16, 2, [["Dashboard redesign — sprint 3", 30, 45]], "sent"),
     inv("i-8", "INV-0008", "c-bikes", -5, 9, [["Storefront — milestone 2 (checkout)", 1, 960]], "draft"),
-    inv("i-9", "INV-0009", "c-nimbus", -9, 5, [["Design system consultation", 6, 45]], "paid", -2),
+    inv("i-9", "INV-0009", "c-nimbus", -9, 5, [["Design system consultation", 6, 45]], "paid", 0),
+    inv("i-10", "INV-0010", "c-nimbus", -118, -104, [["UX research & personas", 1, 1650]], "paid", -106),
+    inv("i-11", "INV-0011", "c-arcadia", -72, -58, [["Campaign A/B variants", 22, 40]], "paid", -60),
   ];
   // Mark older dashboard entries as invoiced so only recent work is unbilled
   for (const e of entries) if (e.projectId === "p-dash" && e.date < d(-14)) e.invoiceId = "i-7";
