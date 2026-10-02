@@ -25,3 +25,10 @@ npm run lint
 npm test
 npm run build
 ```
+
+## Author
+
+Built by [Mahir Faysal](https://mfaysal.com), a web developer in Bangladesh.
+
+- Project page: [Freelane on mfaysal.com](https://mfaysal.com/projects/freelance-hub)
+- More projects: [mfaysal.com/projects](https://mfaysal.com/projects) · Blog: [mfaysal.com/blog](https://mfaysal.com/blog)
